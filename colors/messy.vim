@@ -1,10 +1,12 @@
 " Vim color file
 " Name:     Messy
-" Date:     Saturday, May 27, 2017
+" Date:     Sunday, May 28, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify
 
 set background=dark
+
+highlight clear
 
 if version > 580
     hi clear
@@ -19,7 +21,7 @@ hi Boolean guifg=#804000 guibg=NONE guisp=NONE gui=NONE ctermfg=3 ctermbg=NONE c
 hi Character guifg=#804000 guibg=NONE guisp=NONE gui=NONE ctermfg=3 ctermbg=NONE cterm=NONE
 hi ColorColumn guifg=#ffffff guibg=#8080ff guisp=#8080ff gui=NONE ctermfg=15 ctermbg=12 cterm=NONE
 hi Comment guifg=#808080 guibg=NONE guisp=NONE gui=NONE ctermfg=8 ctermbg=NONE cterm=NONE
-hi Conceal guifg=#808080 guibg=#000000 guisp=#000000 gui=NONE ctermfg=8 ctermbg=0 cterm=NONE
+hi Conceal guifg=#ffff00 guibg=NONE guisp=NONE gui=NONE ctermfg=11 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#8080ff guibg=NONE guisp=NONE gui=NONE ctermfg=12 ctermbg=NONE cterm=NONE
 hi Constant guifg=#804000 guibg=NONE guisp=NONE gui=NONE ctermfg=3 ctermbg=NONE cterm=NONE
 hi Cursor guifg=#000000 guibg=#00ff00 guisp=#00ff00 gui=NONE ctermfg=0 ctermbg=10 cterm=NONE

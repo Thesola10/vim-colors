@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Garden
-" Date:     Saturday, May 27, 2017
+" Date:     Sunday, May 28, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -19,7 +19,7 @@ hi Boolean guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE 
 hi Character guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
 hi ColorColumn guifg=NONE guibg=#d7ffff guisp=#d7ffff gui=NONE ctermfg=NONE ctermbg=255 cterm=NONE
 hi Comment guifg=#b2b2b2 guibg=NONE guisp=NONE gui=NONE ctermfg=249 ctermbg=NONE cterm=NONE
-hi Conceal guifg=#444444 guibg=NONE guisp=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE
+hi Conceal guifg=#0000af guibg=NONE guisp=NONE gui=NONE ctermfg=19 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi Constant guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
 hi Cursor guifg=#080808 guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=232 ctermbg=149 cterm=NONE
