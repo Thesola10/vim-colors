@@ -25,8 +25,8 @@ hi Conceal guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=172 ctermbg=NONE
 hi Conditional guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi Constant guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Cursor guifg=#080808 guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=232 ctermbg=149 cterm=NONE
-hi CursorColumn guifg=#d7d7af guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
-hi CursorLine guifg=#d7d7af guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
+hi CursorColumn guifg=#d7d7af guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
+hi CursorLine guifg=NONE guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=NONE ctermbg=234 cterm=NONE
 hi CursorLineNr guifg=#bcbcbc guibg=#121212 guisp=#121212 gui=NONE ctermfg=250 ctermbg=233 cterm=NONE
 hi Debug guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
 hi Define guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
@@ -36,7 +36,7 @@ hi DiffChange guifg=#262626 guibg=#d7d787 guisp=#d7d787 gui=NONE ctermfg=238 cte
 hi DiffDelete guifg=#e4e4e4 guibg=#ff8787 guisp=#ff8787 gui=NONE ctermfg=254 ctermbg=210 cterm=NONE
 hi DiffText guifg=#121212 guibg=#d7d787 guisp=#d7d787 gui=bold ctermfg=233 ctermbg=186 cterm=bold
 hi Directory guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
-hi EndOfBuffer guifg=#444444 guibg=#080808 guisp=#080808 gui=NONE ctermfg=238 ctermbg=232 cterm=NONE
+hi EndOfBuffer guifg=#444444 guibg=#121212 guisp=#121212 gui=NONE ctermfg=238 ctermbg=233 cterm=NONE
 hi Error guifg=#ffafaf guibg=#5f0000 guisp=#5f0000 gui=NONE ctermfg=217 ctermbg=52 cterm=NONE
 hi ErrorMsg guifg=#af0000 guibg=NONE guisp=NONE gui=NONE ctermfg=124 ctermbg=NONE cterm=NONE
 hi Exception guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
@@ -73,17 +73,10 @@ hi Special guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE
 hi SpecialChar guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
 hi SpecialComment guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
 hi SpecialKey guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
-if has('gui_running')
-    hi SpellBad guifg=NONE guibg=NONE guisp=#d70000 gui=undercurl ctermfg=124 ctermbg=105 cterm=NONE
-    hi SpellCap guifg=NONE guibg=NONE guisp=#ffff5f gui=undercurl ctermfg=227 ctermbg=105 cterm=NONE
-    hi SpellLocal guifg=NONE guibg=NONE guisp=#ffafaf gui=undercurl ctermfg=217 ctermbg=105 cterm=NONE
-    hi SpellRare guifg=NONE guibg=NONE guisp=#606060 gui=undercurl ctermfg=250 ctermbg=105 cterm=NONE
-else
-    hi SpellBad guifg=#af0000 guibg=#8787ff guisp=#8787ff gui=NONE ctermfg=124 ctermbg=105 cterm=NONE
-    hi SpellCap guifg=#ffff5f guibg=#8787ff guisp=#8787ff gui=NONE ctermfg=227 ctermbg=105 cterm=NONE
-    hi SpellLocal guifg=#ffafaf guibg=#8787ff guisp=#8787ff gui=NONE ctermfg=217 ctermbg=105 cterm=NONE
-    hi SpellRare guifg=#bcbcbc guibg=#8787ff guisp=#8787ff gui=NONE ctermfg=250 ctermbg=105 cterm=NONE
-endif
+hi SpellBad guifg=NONE guibg=NONE guisp=#d70000 gui=undercurl ctermfg=124 ctermbg=105 cterm=NONE
+hi SpellCap guifg=NONE guibg=NONE guisp=#005fff gui=undercurl ctermfg=20 ctermbg=105 cterm=NONE
+hi SpellLocal guifg=NONE guibg=NONE guisp=#ffafaf gui=undercurl ctermfg=217 ctermbg=105 cterm=NONE
+hi SpellRare guifg=NONE guibg=NONE guisp=#606060 gui=undercurl ctermfg=250 ctermbg=105 cterm=NONE
 hi Statement guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#bcbcbc guibg=#262626 guisp=#262626 gui=NONE ctermfg=250 ctermbg=235 cterm=NONE
 hi StatusLineNC guifg=#9e9e9e guibg=#262626 guisp=#262626 gui=NONE ctermfg=247 ctermbg=235 cterm=NONE
