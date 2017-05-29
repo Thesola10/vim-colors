@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Garden
-" Date:     Sunday, May 28, 2017
+" Date:     Monday, May 29, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -59,7 +59,7 @@ hi Number guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE c
 hi Operator guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi Pmenu guifg=#080808 guibg=#ffffd7 guisp=#ffffd7 gui=NONE ctermfg=232 ctermbg=230 cterm=NONE
 hi PmenuSbar guifg=NONE guibg=#eeeeee guisp=#eeeeee gui=NONE ctermfg=NONE ctermbg=255 cterm=NONE
-hi PmenuSel guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
+hi PmenuSel guifg=#af0000 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=124 ctermbg=187 cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#afaf87 guisp=#afaf87 gui=NONE ctermfg=NONE ctermbg=144 cterm=NONE
 hi PreCondit guifg=#875f00 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#875f00 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
@@ -88,7 +88,7 @@ hi StatusLineNC guifg=#c6c6c6 guibg=#808080 guisp=#808080 gui=NONE ctermfg=251 c
 hi StorageClass guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi String guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
 hi Structure guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
-hi TabLine guifg=#080808 guibg=#af875f guisp=#af875f gui=NONE ctermfg=232 ctermbg=137 cterm=NONE
+hi TabLine guifg=#262626 guibg=#af875f guisp=#af875f gui=NONE ctermfg=235 ctermbg=137 cterm=NONE
 hi TabLineFill guifg=NONE guibg=#af875f guisp=#af875f gui=NONE ctermfg=NONE ctermbg=137 cterm=NONE
 hi TabLineSel guifg=#eeeeee guibg=#af875f guisp=#af875f gui=bold ctermfg=255 ctermbg=137 cterm=bold
 hi Tag guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
@@ -101,4 +101,4 @@ hi VertSplit guifg=#c6c6c6 guibg=#808080 guisp=#808080 gui=NONE ctermfg=244 cter
 hi Visual guifg=#080808 guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
 hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#ff5f00 guibg=NONE guisp=NONE gui=NONE ctermfg=202 ctermbg=NONE cterm=NONE
-hi WildMenu guifg=#ffffd7 guibg=#808080 guisp=#808080 gui=NONE ctermfg=230 ctermbg=244 cterm=NONE
+hi WildMenu guifg=#afd700 guibg=#808080 guisp=#808080 gui=NONE ctermfg=148 ctermbg=244 cterm=NONE
