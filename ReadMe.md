@@ -16,12 +16,6 @@ How to use them:
 
     + http://vimcolors.com/663/moody/dark
 
-*   Messy: 16 colors, as messy as my bookshelf
-
-    Preview:
-
-    + http://vimcolors.com/662/messy/dark
-
 ## Light Schemes
 
 *   Garden: apples, leaves, vines in the white garden
@@ -29,3 +23,9 @@ How to use them:
     Preview:
 
     + http://vimcolors.com/661/garden/light
+
+*   Messy: 16 colors inherit from you terminal settings
+
+    Preview:
+
+    + http://vimcolors.com/662/messy/light
