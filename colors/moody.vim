@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Moody
-" Date:     Sunday, May 28, 2017
+" Date:     Monday, May 29, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -25,8 +25,8 @@ hi Conceal guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=172 ctermbg=NONE
 hi Conditional guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi Constant guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Cursor guifg=#080808 guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=232 ctermbg=149 cterm=NONE
-hi CursorColumn guifg=#dcdccc guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
-hi CursorLine guifg=#dcdccc guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
+hi CursorColumn guifg=#d7d7af guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
+hi CursorLine guifg=#d7d7af guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
 hi CursorLineNr guifg=#bcbcbc guibg=#121212 guisp=#121212 gui=NONE ctermfg=250 ctermbg=233 cterm=NONE
 hi Debug guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
 hi Define guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
@@ -59,9 +59,9 @@ hi NonText guifg=#444444 guibg=NONE guisp=NONE gui=NONE ctermfg=238 ctermbg=NONE
 hi Normal guifg=#c6c6c6 guibg=#121212 guisp=#121212 gui=NONE ctermfg=251 ctermbg=233 cterm=NONE
 hi Number guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Operator guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
-hi Pmenu guifg=#ffffd7 guibg=#3a3a3a guisp=#3a3a3a gui=NONE ctermfg=230 ctermbg=237 cterm=NONE
+hi Pmenu guifg=#afaf5f guibg=#3a3a3a guisp=#3a3a3a gui=NONE ctermfg=143 ctermbg=237 cterm=NONE
 hi PmenuSbar guifg=NONE guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=NONE ctermbg=234 cterm=NONE
-hi PmenuSel guifg=#d7d75f guibg=#1c1c1c guisp=#1c1c1c gui=NONE ctermfg=185 ctermbg=234 cterm=NONE
+hi PmenuSel guifg=#ffffd7 guibg=#303030 guisp=#303030 gui=NONE ctermfg=230 ctermbg=236 cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#87875f guisp=#87875f gui=NONE ctermfg=NONE ctermbg=101 cterm=NONE
 hi PreCondit guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
 hi PreProc guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
@@ -90,7 +90,7 @@ hi StatusLineNC guifg=#9e9e9e guibg=#262626 guisp=#262626 gui=NONE ctermfg=247 c
 hi StorageClass guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE
 hi String guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Structure guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE
-hi TabLine guifg=#1c1c1c guibg=#a8a8a8 guisp=#a8a8a8 gui=NONE ctermfg=234 ctermbg=248 cterm=NONE
+hi TabLine guifg=#303030 guibg=#a8a8a8 guisp=#a8a8a8 gui=NONE ctermfg=236 ctermbg=248 cterm=NONE
 hi TabLineFill guifg=NONE guibg=#a8a8a8 guisp=#a8a8a8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
 hi TabLineSel guifg=#e4e4e4 guibg=#666666 guisp=#666666 gui=bold ctermfg=254 ctermbg=242 cterm=bold
 hi Tag guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
@@ -103,4 +103,4 @@ hi VertSplit guifg=#262626 guibg=#262626 guisp=#262626 gui=NONE ctermfg=235 cter
 hi Visual guifg=#080808 guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
 hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#ff8787 guibg=NONE guisp=NONE gui=NONE ctermfg=210 ctermbg=NONE cterm=NONE
-hi WildMenu guifg=#ffffd7 guibg=#262626 guisp=#262626 gui=NONE ctermfg=230 ctermbg=235 cterm=NONE
+hi WildMenu guifg=#d7d75f guibg=#262626 guisp=#262626 gui=NONE ctermfg=185 ctermbg=235 cterm=NONE
