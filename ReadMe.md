@@ -2,6 +2,9 @@
 
 All color schemes here support at least 256 colors.
 
+All the builtin syntax items are colorized, including cursor line, tab line,
+diff text, folded text, spellcheck, etc.
+
 How to use them:
 
 1. Clone this repository, or just copy the files you need.
@@ -24,7 +27,7 @@ How to use them:
 
     + http://vimcolors.com/661/garden/light
 
-*   Messy: 16 colors inherit from you terminal settings
+*   Messy: 16 colors inherited from your terminal settings
 
     Preview:
 
