@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Garden
-" Date:     Wednesday, May 31, 2017
+" Date:     Thursday, June 1, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -22,7 +22,7 @@ hi Comment guifg=#b2b2b2 guibg=NONE guisp=NONE gui=NONE ctermfg=249 ctermbg=NONE
 hi Conceal guifg=#0000af guibg=NONE guisp=NONE gui=NONE ctermfg=19 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi Constant guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
-hi Cursor guifg=#080808 guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=232 ctermbg=149 cterm=NONE
+hi Cursor guifg=#ffffff guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=231 ctermbg=149 cterm=NONE
 hi CursorColumn guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
 hi CursorLine guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
 hi CursorLineNr guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
@@ -50,7 +50,7 @@ hi Keyword guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE
 hi Label guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi LineNr guifg=#e4e4e4 guibg=NONE guisp=NONE gui=NONE ctermfg=254 ctermbg=NONE cterm=NONE
 hi Macro guifg=#875f00 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
-hi MatchParen guifg=#5f0000 guibg=#afd75f guisp=#afd75f gui=bold ctermfg=52 ctermbg=149 cterm=bold
+hi MatchParen guifg=#af0000 guibg=#afd75f guisp=#afd75f gui=bold ctermfg=124 ctermbg=149 cterm=bold
 hi ModeMsg guifg=#0000af guibg=NONE guisp=NONE gui=NONE ctermfg=19 ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi NonText guifg=#e4e4e4 guibg=NONE guisp=NONE gui=NONE ctermfg=254 ctermbg=NONE cterm=NONE

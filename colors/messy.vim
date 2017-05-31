@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Messy
-" Date:     Wednesday, May 31, 2017
+" Date:     Thursday, June 1, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -52,7 +52,7 @@ hi Keyword guifg=#000080 guibg=NONE guisp=NONE gui=NONE ctermfg=4 ctermbg=NONE c
 hi Label guifg=#000080 guibg=NONE guisp=NONE gui=NONE ctermfg=4 ctermbg=NONE cterm=NONE
 hi LineNr guifg=#ffffff guibg=#808080 guisp=NONE gui=NONE ctermfg=15 ctermbg=8 cterm=NONE
 hi Macro guifg=#008000 guibg=NONE guisp=NONE gui=NONE ctermfg=2 ctermbg=NONE cterm=NONE
-hi MatchParen guifg=#ffffff guibg=#0000ff guisp=#0000ff gui=bold ctermfg=15 ctermbg=12 cterm=bold
+hi MatchParen guifg=#ffffff guibg=#ff00ff guisp=#ff00ff gui=bold ctermfg=15 ctermbg=13 cterm=bold
 hi ModeMsg guifg=#0000ff guibg=NONE guisp=NONE gui=NONE ctermfg=12 ctermbg=NONE cterm=NONE
 hi MoreMsg guifg=#008080 guibg=NONE guisp=NONE gui=NONE ctermfg=6 ctermbg=NONE cterm=NONE
 hi NonText guifg=#c0c0c0 guibg=NONE guisp=NONE gui=NONE ctermfg=7 ctermbg=NONE cterm=NONE
