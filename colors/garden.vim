@@ -71,10 +71,10 @@ hi Special guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE 
 hi SpecialChar guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
 hi SpecialComment guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
 hi SpecialKey guifg=#005fff guibg=NONE guisp=NONE gui=NONE ctermfg=27 ctermbg=NONE cterm=NONE
-hi SpellBad guifg=NONE guibg=NONE guisp=#ff0000 gui=undercurl ctermfg=196 ctermbg=189 cterm=NONE
-hi SpellCap guifg=NONE guibg=NONE guisp=#005fff gui=undercurl ctermfg=27 ctermbg=189 cterm=NONE
-hi SpellLocal guifg=NONE guibg=NONE guisp=#d78700 gui=undercurl ctermfg=167 ctermbg=189 cterm=NONE
-hi SpellRare guifg=NONE guibg=NONE guisp=#9e9e9e gui=undercurl ctermfg=247 ctermbg=189 cterm=NONE
+hi SpellBad guifg=NONE guibg=NONE guisp=#ff0000 gui=undercurl ctermfg=196 ctermbg=189 cterm=underline
+hi SpellCap guifg=NONE guibg=NONE guisp=#005fff gui=undercurl ctermfg=27 ctermbg=189 cterm=underline
+hi SpellLocal guifg=NONE guibg=NONE guisp=#d78700 gui=undercurl ctermfg=167 ctermbg=189 cterm=underline
+hi SpellRare guifg=NONE guibg=NONE guisp=#9e9e9e gui=undercurl ctermfg=247 ctermbg=189 cterm=underline
 hi Statement guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#eeeeee guibg=#808080 guisp=NONE gui=NONE ctermfg=255 ctermbg=244 cterm=NONE
 hi StatusLineNC guifg=#c6c6c6 guibg=#808080 guisp=NONE gui=NONE ctermfg=251 ctermbg=244 cterm=NONE
