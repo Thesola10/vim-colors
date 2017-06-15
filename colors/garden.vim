@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Garden
-" Date:     Thursday, June 1, 2017
+" Date:     Thursday, June 15, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -22,7 +22,7 @@ hi Comment guifg=#b2b2b2 guibg=NONE guisp=NONE gui=NONE ctermfg=249 ctermbg=NONE
 hi Conceal guifg=#0000af guibg=NONE guisp=NONE gui=NONE ctermfg=19 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi Constant guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
-hi Cursor guifg=#ffffff guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=231 ctermbg=149 cterm=NONE
+hi Cursor guifg=#ffffff guibg=#af5fff guisp=#af5fff gui=NONE ctermfg=231 ctermbg=135 cterm=NONE
 hi CursorColumn guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
 hi CursorLine guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
 hi CursorLineNr guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
@@ -41,7 +41,7 @@ hi Exception guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NO
 hi Float guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
 hi FoldColumn guifg=#585858 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=240 ctermbg=255 cterm=NONE
 hi Folded guifg=#585858 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
-hi Function guifg=#5f875f guibg=NONE guisp=NONE gui=NONE ctermfg=65 ctermbg=NONE cterm=NONE
+hi Function guifg=#005f00 guibg=NONE guisp=NONE gui=NONE ctermfg=22 ctermbg=NONE cterm=NONE
 hi Identifier guifg=#5f8700 guibg=NONE guisp=NONE gui=NONE ctermfg=64 ctermbg=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi IncSearch guifg=#1c1c1c guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
@@ -86,7 +86,7 @@ hi TabLineFill guifg=NONE guibg=#af875f guisp=NONE gui=NONE ctermfg=NONE ctermbg
 hi TabLineSel guifg=#eeeeee guibg=#af875f guisp=NONE gui=bold ctermfg=255 ctermbg=137 cterm=bold
 hi Tag guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
 hi Title guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-hi Todo guifg=#ffffff guibg=#afd75f guisp=NONE gui=NONE ctermfg=231 ctermbg=149 cterm=NONE
+hi Todo guifg=#ffffff guibg=#ffaf00 guisp=NONE gui=NONE ctermfg=231 ctermbg=214 cterm=NONE
 hi Type guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi Typedef guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
