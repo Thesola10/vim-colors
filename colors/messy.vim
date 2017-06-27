@@ -1,12 +1,10 @@
 " Vim color file
 " Name:     Messy
-" Date:     Thursday, June 1, 2017
+" Date:     Tuesday, June 27, 2017
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=light
-
-highlight clear
 
 if version > 580
     hi clear
