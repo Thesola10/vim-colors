@@ -33,4 +33,23 @@ How to use them:
 
     Preview:
 
+    +   <img width="652" alt="black on white" src="https://user-images.githubusercontent.com/23622455/30245320-43365b44-9608-11e7-8c7c-ec89396de280.png">
     +   http://vimcolors.com/662/messy/light
+
+    +   <details><summary>More screenshots with different background images.</summary><img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30245319-40c4b554-9608-11e7-87ac-181f45ba7810.png"><br><img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30245318-40bad2dc-9608-11e7-8fa5-17728698e2de.png"></details>
+
+        The background images used in the screenshots:
+
+        +   [Topography] made by [Shankar Ganesh](http://shankar.ellipsonic.com/)
+        +   [Lined Paper] made by [Gjermund Gustavsen](https://tight.no/)
+
+        [Lined Paper]: https://www.toptal.com/designers/subtlepatterns/lined-paper-2/
+        [Topography]: https://www.toptal.com/designers/subtlepatterns/topography/
+
+    Options:
+
+    +   Transparent background: `let g:colorscheme_messy_transparent = 1`
+
+    +   Color palette:
+
+        <img width="768" alt="palette" src="https://user-images.githubusercontent.com/23622455/30245175-f52e2a52-9603-11e7-8b54-77ea976d0ee1.png">
