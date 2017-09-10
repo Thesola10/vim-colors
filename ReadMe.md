@@ -33,10 +33,10 @@ How to use them:
 
     Preview:
 
-    +   <img width="652" alt="black on white" src="https://user-images.githubusercontent.com/23622455/30245320-43365b44-9608-11e7-8c7c-ec89396de280.png">
+    +   <img width="652" alt="black on white" src="https://user-images.githubusercontent.com/23622455/30253438-9cbcd152-96b7-11e7-9f44-f9b790351bef.png">
     +   http://vimcolors.com/662/messy/light
 
-    +   <details><summary>More screenshots with different background images.</summary><img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30245319-40c4b554-9608-11e7-87ac-181f45ba7810.png"><br><img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30245318-40bad2dc-9608-11e7-8fa5-17728698e2de.png"></details>
+    +   <details><summary>More screenshots with different background images.</summary><img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30253436-9cbad1ae-96b7-11e7-8da3-daf290293bdd.png"><br><img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30253437-9cbc6eba-96b7-11e7-958c-11638362ae2d.png"></details>
 
         The background images used in the screenshots:
 
