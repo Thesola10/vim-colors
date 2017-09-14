@@ -52,4 +52,4 @@ How to use them:
 
     +   Color palette:
 
-        <img width="768" alt="palette" src="https://user-images.githubusercontent.com/23622455/30245175-f52e2a52-9603-11e7-8b54-77ea976d0ee1.png">
+        <img width="768" alt="palette" src="https://user-images.githubusercontent.com/23622455/30425861-13b0e11e-997d-11e7-86e5-fa95459ba645.png">
