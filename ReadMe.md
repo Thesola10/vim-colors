@@ -36,7 +36,11 @@ How to use them:
     +   <img width="652" alt="black on white" src="https://user-images.githubusercontent.com/23622455/30253438-9cbcd152-96b7-11e7-9f44-f9b790351bef.png">
     +   http://vimcolors.com/662/messy/light
 
-    +   <details><summary>More screenshots with different background images.</summary><img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30253436-9cbad1ae-96b7-11e7-8da3-daf290293bdd.png"><br><img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30253437-9cbc6eba-96b7-11e7-958c-11638362ae2d.png"></details>
+    Options:
+
+    +   Transparent background: `let g:colorscheme_messy_transparent = 1`
+
+        <details><summary>More screenshots with different background images.</summary><img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30253436-9cbad1ae-96b7-11e7-8da3-daf290293bdd.png"><br><img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30253437-9cbc6eba-96b7-11e7-958c-11638362ae2d.png"></details>
 
         The background images used in the screenshots:
 
@@ -46,11 +50,7 @@ How to use them:
         [Lined Paper]: https://www.toptal.com/designers/subtlepatterns/lined-paper-2/
         [Topography]: https://www.toptal.com/designers/subtlepatterns/topography/
 
-    Options:
-
-    +   Transparent background: `let g:colorscheme_messy_transparent = 1`
-
-    +   Palette:
+    +   Inverse BG&FG colors: `let g:colorscheme_messy_inverse = 1`
 
         <img width="768" alt="Palette" src="https://user-images.githubusercontent.com/23622455/31981859-3fb365cc-b988-11e7-9a70-32c29d12640b.png">
 
