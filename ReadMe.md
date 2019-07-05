@@ -31,7 +31,7 @@ How to use them:
 
 *   Messy: 16 colors inherited from your terminal settings
 
-    Preview:
+    Preview (YMMV. Outdated.):
 
     +   <img width="652" alt="black on white" src="https://user-images.githubusercontent.com/23622455/30253438-9cbcd152-96b7-11e7-9f44-f9b790351bef.png">
     +   http://vimcolors.com/662/messy/light
