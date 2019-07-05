@@ -24,7 +24,7 @@ How to use them:
 
 *   Garden: apples, leaves, vines in the white garden
 
-    Preview:
+    Preview (Outdated. The colors for line numbers have been changed.):
 
     +   <a href="https://asciinema.org/a/0XezoVW8x0ejtRF7qX9uwkDgm"><img width="590" alt="https://asciinema.org/a/0XezoVW8x0ejtRF7qX9uwkDgm" src="https://user-images.githubusercontent.com/23622455/27980953-df0eb324-63b6-11e7-87ab-95acd8d0191e.png"></a>
     +   http://vimcolors.com/661/garden/light
