@@ -57,3 +57,32 @@ How to use them:
         Black and White are swapped. Black↔BrightWhite, BrightBlack↔White.
         Same applied to normal background and foreground colors.  See:
         https://github.com/jakwings/vim-colors/wiki/%5BLight%5D-iTerm2-Theme
+
+        **Palette Update**:
+
+        ```
+        {
+          background = "#FEEACF",
+          foreground = "#000000",
+          ansi = {
+            black   = "#FFFFFF",
+            red     = "#7F0002",
+            green   = "#407F00",
+            yellow  = "#7F6633",
+            blue    = "#004A7F",
+            magenta = "#7F207F",
+            cyan    = "#007F7F",
+            white   = "#525252",
+          },
+          bright = {
+            black   = "#CBCBCB",
+            red     = "#BF0003",
+            green   = "#60BF00",
+            yellow  = "#BF994C",
+            blue    = "#0070BF",
+            magenta = "#BF2FBF",
+            cyan    = "#00BFBF",
+            white   = "#000000",
+          },
+        }
+        ```
