@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Messy
-" Date:     Saturday, July 6, 2019
+" Date:     Saturday, December 4, 2021
 " Author:   Jak Wings <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -51,11 +51,7 @@ if exists('g:colorscheme_messy_inverse') && g:colorscheme_messy_inverse
 endif
 
 function! s:hi(name, guifg, guibg, guisp, gui, ctermfg, ctermbg, cterm)
-    exec 'hi ' . a:name
-                \ . ' guifg=' . a:guifg . ' guibg=' . a:guibg
-                \ . ' guisp=' . a:guisp . ' gui=' . a:gui
-                \ . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg
-                \ . ' cterm=' . a:cterm
+    exec 'hi ' . a:name . ' guifg=' . a:guifg . ' guibg=' . a:guibg . ' guisp=' . a:guisp . ' gui=' . a:gui . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg . ' cterm=' . a:cterm
 endfunction
 
 call s:hi('Boolean', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
