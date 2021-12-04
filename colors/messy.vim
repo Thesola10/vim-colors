@@ -1,7 +1,7 @@
 " Vim color file
 " Name:     Messy
-" Date:     Saturday, December 4, 2021
-" Author:   Jak Wings <jakwings@gmail.com>
+" Date:     Sunday, December 5, 2021
+" Author:   Jak.W <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=light
@@ -78,7 +78,7 @@ call s:hi('Error', s:g0, s:g9, 'NONE', 'bold', s:t0, s:t9, 'underline')
 call s:hi('ErrorMsg', s:g9, 'NONE', 'NONE', 'NONE', s:t9, 'NONE', 'NONE')
 call s:hi('Exception', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
 call s:hi('Float', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('FoldColumn', s:g6, s:g8, 'NONE', 'NONE', s:t6, s:t8, 'NONE')
+call s:hi('FoldColumn', s:g14, s:g8, 'NONE', 'NONE', s:t14, s:t8, 'NONE')
 call s:hi('Folded', s:g6, 'NONE', 'NONE', 'NONE', s:t6, 'NONE', 'NONE')
 call s:hi('Function', s:g1, 'NONE', 'NONE', 'NONE', s:t1, 'NONE', 'NONE')
 call s:hi('Identifier', s:g1, 'NONE', 'NONE', 'NONE', s:t1, 'NONE', 'NONE')
@@ -105,18 +105,20 @@ call s:hi('PreProc', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
 call s:hi('Question', s:g0, 'NONE', 'NONE', 'bold', s:t0, 'NONE', 'bold')
 call s:hi('Repeat', s:g12, 'NONE', 'NONE', 'NONE', s:t12, 'NONE', 'NONE')
 call s:hi('Search', s:g15, s:g2, s:g2, 'NONE', s:t15, s:t2, 'NONE')
-call s:hi('SignColumn', s:g6, s:g8, 'NONE', 'NONE', s:t6, s:t8, 'NONE')
+call s:hi('SignColumn', s:g14, s:g8, 'NONE', 'NONE', s:t14, s:t8, 'NONE')
 call s:hi('Special', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('SpecialChar', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('SpecialComment', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('SpecialKey', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
 call s:hi('SpellBad', 'NONE', 'NONE', s:g9, 'undercurl', s:t1, s:t7, 'underline')
 call s:hi('SpellCap', 'NONE', 'NONE', s:g12, 'undercurl', s:t4, s:t7, 'underline')
-call s:hi('SpellLocal', 'NONE', 'NONE', s:g6, 'undercurl', s:t6, s:t7, 'underline')
+call s:hi('SpellLocal', 'NONE', 'NONE', s:g2, 'undercurl', s:t0, s:t7, 'underline')
 call s:hi('SpellRare', 'NONE', 'NONE', s:g8, 'undercurl', s:t8, s:t7, 'underline')
 call s:hi('Statement', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
 call s:hi('StatusLine', s:g15, s:g8, 'NONE', 'NONE', s:t15, s:t8, 'NONE')
 call s:hi('StatusLineNC', s:g7, s:g8, 'NONE', 'NONE', s:t7, s:t8, 'NONE')
+call s:hi('StatusLineTerm', s:g10, s:g0, 'NONE', 'NONE', s:t10, s:t0, 'NONE')
+call s:hi('StatusLineTermNC', s:g2, s:g0, 'NONE', 'NONE', s:t2, s:t0, 'NONE')
 call s:hi('StorageClass', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('String', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
 call s:hi('Structure', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')

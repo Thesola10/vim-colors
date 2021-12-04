@@ -1,7 +1,7 @@
 " Vim color file
 " Name:     Moody
-" Date:     Friday, September 29, 2017
-" Author:   Jak Wings <jakwings@gmail.com>
+" Date:     Sunday, December 5, 2021
+" Author:   Jak.W <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=dark
@@ -14,6 +14,10 @@ endif
 
 let g:colors_name = 'moody'
 
+" TODO: TUI
+" LineNrAbove LineNrBelow QuickFixLine Terminal
+" TODO: GUI
+" lCursor CursorIM Menu ToolbarLine ToolbarButton Scrollbar Tooltip &statusline:User1-9
 hi Boolean guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Character guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi ColorColumn guifg=#d7d7af guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
@@ -77,6 +81,8 @@ hi SpellRare guifg=NONE guibg=NONE guisp=#606060 gui=undercurl ctermfg=245 cterm
 hi Statement guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#bcbcbc guibg=#262626 guisp=NONE gui=NONE ctermfg=250 ctermbg=235 cterm=NONE
 hi StatusLineNC guifg=#9e9e9e guibg=#262626 guisp=NONE gui=NONE ctermfg=247 ctermbg=235 cterm=NONE
+hi StatusLineTerm guifg=#afd75f guibg=#080808 guisp=NONE gui=NONE ctermfg=149 ctermbg=232 cterm=NONE
+hi StatusLineTermNC guifg=#afd787 guibg=#080808 guisp=NONE gui=NONE ctermfg=150 ctermbg=232 cterm=NONE
 hi StorageClass guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE
 hi String guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
 hi Structure guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE

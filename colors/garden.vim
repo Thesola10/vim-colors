@@ -1,7 +1,7 @@
 " Vim color file
 " Name:     Garden
-" Date:     Friday, July 5, 2019
-" Author:   Jak Wings <jakwings@gmail.com>
+" Date:     Sunday, December 5, 2021
+" Author:   Jak.W <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=light
@@ -77,6 +77,8 @@ hi SpellRare guifg=NONE guibg=NONE guisp=#9e9e9e gui=undercurl ctermfg=247 cterm
 hi Statement guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi StatusLine guifg=#eeeeee guibg=#808080 guisp=NONE gui=NONE ctermfg=255 ctermbg=244 cterm=NONE
 hi StatusLineNC guifg=#c6c6c6 guibg=#808080 guisp=NONE gui=NONE ctermfg=251 ctermbg=244 cterm=NONE
+hi StatusLineTerm guifg=#ffffff guibg=#080808 guisp=NONE gui=NONE ctermfg=231 ctermbg=232 cterm=NONE
+hi StatusLineTermNC guifg=#eeeeee guibg=#080808 guisp=NONE gui=NONE ctermfg=255 ctermbg=232 cterm=NONE
 hi StorageClass guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi String guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
 hi Structure guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
@@ -89,7 +91,7 @@ hi Todo guifg=#ffffff guibg=#ffaf00 guisp=NONE gui=NONE ctermfg=231 ctermbg=214 
 hi Type guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi Typedef guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
-hi VertSplit guifg=#c6c6c6 guibg=#808080 guisp=NONE gui=NONE ctermfg=244 ctermbg=244 cterm=NONE
+hi VertSplit guifg=#808080 guibg=#808080 guisp=NONE gui=NONE ctermfg=244 ctermbg=244 cterm=NONE
 hi Visual guifg=#080808 guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
 hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#ff5f00 guibg=NONE guisp=NONE gui=NONE ctermfg=202 ctermbg=NONE cterm=NONE
