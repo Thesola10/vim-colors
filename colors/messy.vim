@@ -1,6 +1,6 @@
 " Vim color file
 " Name:     Messy
-" Date:     Sunday, December 5, 2021
+" Date:     Wednesday, December 8, 2021
 " Author:   Jak.W <jakwings@gmail.com>
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
@@ -14,40 +14,27 @@ endif
 
 let g:colors_name = 'messy'
 
-let [s:g0, s:t0] = ['#000000', '0']
-let [s:g1, s:t1] = ['#800000', '1']
-let [s:g2, s:t2] = ['#008000', '2']
-let [s:g3, s:t3] = ['#808000', '3']
-let [s:g4, s:t4] = ['#000080', '4']
-let [s:g5, s:t5] = ['#800080', '5']
-let [s:g6, s:t6] = ['#008080', '6']
-let [s:g7, s:t7] = ['#c0c0c0', '7']
-let [s:g8, s:t8] = ['#808080', '8']
-let [s:g9, s:t9] = ['#ff0000', '9']
-let [s:g10, s:t10] = ['#00ff00', '10']
-let [s:g11, s:t11] = ['#ffff00', '11']
-let [s:g12, s:t12] = ['#0000ff', '12']
-let [s:g13, s:t13] = ['#ff00ff', '13']
-let [s:g14, s:t14] = ['#00ffff', '14']
-let [s:g15, s:t15] = ['#ffffff', '15']
+let [s:g0,  s:t0 ] = ['#000000', 0 ]
+let [s:g1,  s:t1 ] = ['#800000', 1 ]
+let [s:g2,  s:t2 ] = ['#008000', 2 ]
+let [s:g3,  s:t3 ] = ['#808000', 3 ]
+let [s:g4,  s:t4 ] = ['#000080', 4 ]
+let [s:g5,  s:t5 ] = ['#800080', 5 ]
+let [s:g6,  s:t6 ] = ['#008080', 6 ]
+let [s:g7,  s:t7 ] = ['#c0c0c0', 7 ]
+let [s:g8,  s:t8 ] = ['#808080', 8 ]
+let [s:g9,  s:t9 ] = ['#ff0000', 9 ]
+let [s:g10, s:t10] = ['#00ff00', 10]
+let [s:g11, s:t11] = ['#ffff00', 11]
+let [s:g12, s:t12] = ['#0000ff', 12]
+let [s:g13, s:t13] = ['#ff00ff', 13]
+let [s:g14, s:t14] = ['#00ffff', 14]
+let [s:g15, s:t15] = ['#ffffff', 15]
 
+" I mean, you go with the terminal settings. (inverse B&W)
 if exists('g:colorscheme_messy_inverse') && g:colorscheme_messy_inverse
-    let [s:g0, s:t0] = ['#ffffff', '15']
-    "let [s:g1, s:t1] = ['#ff0000', '9']
-    "let [s:g2, s:t2] = ['#00ff00', '10']
-    "let [s:g3, s:t3] = ['#ffff00', '11']
-    "let [s:g4, s:t4] = ['#0000ff', '12']
-    "let [s:g5, s:t5] = ['#ff00ff', '13']
-    "let [s:g6, s:t6] = ['#00ffff', '14']
-    let [s:g7, s:t7] = ['#808080', '8']
-    let [s:g8, s:t8] = ['#c0c0c0', '7']
-    "let [s:g9, s:t9] = ['#800000', '1']
-    "let [s:g10, s:t10] = ['#008000', '2']
-    "let [s:g11, s:t11] = ['#808000', '3']
-    "let [s:g12, s:t12] = ['#000080', '4']
-    "let [s:g13, s:t13] = ['#800080', '5']
-    "let [s:g14, s:t14] = ['#008080', '6']
-    let [s:g15, s:t15] = ['#000000', '0']
+    let [s:g0, s:t0, s:g15, s:t15] = [s:g15, s:t15, s:g0, s:t0]
+    let [s:g7, s:t7, s:g8, s:t8] = [s:g8, s:t8, s:g7, s:t7]
 endif
 
 function! s:hi(name, guifg, guibg, guisp, gui, ctermfg, ctermbg, cterm)
@@ -131,7 +118,7 @@ call s:hi('Todo', s:g0, s:g11, 'NONE', 'bold', s:t0, s:t11, 'underline')
 call s:hi('Type', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('Typedef', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('Underlined', 'NONE', 'NONE', 'NONE', 'underline', 'NONE', 'NONE', 'underline')
-call s:hi('VertSplit', s:g7, s:g8, 'NONE', 'NONE', s:t7, s:t8, 'NONE')
+call s:hi('VertSplit', s:g8, s:g8, 'NONE', 'NONE', s:t8, s:t8, 'NONE')
 call s:hi('Visual', s:g15, s:g12, s:g12, 'NONE', s:t15, s:t12, 'NONE')
 call s:hi('VisualNOS', s:g7, s:g4, s:g4, 'NONE', s:t7, s:t4, 'NONE')
 call s:hi('WarningMsg', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
