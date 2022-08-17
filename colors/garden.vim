@@ -1,7 +1,7 @@
 " Vim color file
 " Name:     Garden
-" Date:     Sunday, December 5, 2021
-" Author:   Jak.W <jakwings@gmail.com>
+" Date:     Wednesday, August 17, 2022
+" Author:   J.W https://jakwings.github.io/AMA/
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=light
@@ -21,7 +21,8 @@ hi Comment guifg=#b2b2b2 guibg=NONE guisp=NONE gui=NONE ctermfg=249 ctermbg=NONE
 hi Conceal guifg=#0000af guibg=NONE guisp=NONE gui=NONE ctermfg=19 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi Constant guifg=#00005f guibg=NONE guisp=NONE gui=NONE ctermfg=17 ctermbg=NONE cterm=NONE
-hi Cursor guifg=#ffffff guibg=#af5fff guisp=#af5fff gui=NONE ctermfg=231 ctermbg=135 cterm=NONE
+hi CurSearch guifg=#1c1c1c guibg=#ffffaf guisp=#1c1c1c gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
+hi Cursor guifg=#ffffff guibg=#af5fff guisp=#ffffff gui=NONE ctermfg=231 ctermbg=135 cterm=NONE
 hi CursorColumn guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
 hi CursorLine guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
 hi CursorLineNr guifg=#080808 guibg=#eeeeee guisp=NONE gui=NONE ctermfg=232 ctermbg=255 cterm=NONE
@@ -43,7 +44,7 @@ hi Folded guifg=#585858 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE 
 hi Function guifg=#005f00 guibg=NONE guisp=NONE gui=NONE ctermfg=22 ctermbg=NONE cterm=NONE
 hi Identifier guifg=#5f8700 guibg=NONE guisp=NONE gui=NONE ctermfg=64 ctermbg=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi IncSearch guifg=#1c1c1c guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
+hi IncSearch guifg=#1c1c1c guibg=#ffffaf guisp=#1c1c1c gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
 hi Include guifg=#875f00 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
 hi Keyword guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
 hi Label guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
@@ -64,7 +65,7 @@ hi PreCondit guifg=#875f00 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NON
 hi PreProc guifg=#875f00 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
 hi Question guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi Repeat guifg=#d70000 guibg=NONE guisp=NONE gui=NONE ctermfg=160 ctermbg=NONE cterm=NONE
-hi Search guifg=#444444 guibg=#ffffd7 guisp=#ffffd7 gui=NONE ctermfg=238 ctermbg=230 cterm=NONE
+hi Search guifg=#444444 guibg=#ffffd7 guisp=#444444 gui=NONE ctermfg=238 ctermbg=230 cterm=NONE
 hi SignColumn guifg=#585858 guibg=#e4e4e4 guisp=NONE gui=NONE ctermfg=240 ctermbg=254 cterm=NONE
 hi Special guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
 hi SpecialChar guifg=#870000 guibg=NONE guisp=NONE gui=NONE ctermfg=88 ctermbg=NONE cterm=NONE
@@ -92,7 +93,11 @@ hi Type guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cte
 hi Typedef guifg=#5f0000 guibg=NONE guisp=NONE gui=NONE ctermfg=52 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi VertSplit guifg=#808080 guibg=#808080 guisp=NONE gui=NONE ctermfg=244 ctermbg=244 cterm=NONE
-hi Visual guifg=#080808 guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
-hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
+hi Visual guifg=#080808 guibg=#ffffaf guisp=#080808 gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
+hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#080808 gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#ff5f00 guibg=NONE guisp=NONE gui=NONE ctermfg=202 ctermbg=NONE cterm=NONE
 hi WildMenu guifg=#afd700 guibg=#808080 guisp=NONE gui=NONE ctermfg=148 ctermbg=244 cterm=NONE
+
+if version >= 900 && exists('&t_AU')
+    hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline ctermul=NONE
+endif

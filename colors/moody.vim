@@ -1,7 +1,7 @@
 " Vim color file
 " Name:     Moody
-" Date:     Sunday, December 5, 2021
-" Author:   Jak.W <jakwings@gmail.com>
+" Date:     Wednesday, August 17, 2022
+" Author:   J.W https://jakwings.github.io/AMA/
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=dark
@@ -15,7 +15,7 @@ endif
 let g:colors_name = 'moody'
 
 " TODO: TUI
-" LineNrAbove LineNrBelow QuickFixLine Terminal
+" LineNrAbove LineNrBelow QuickFixLine Terminal CursorLineSign CursorLineFold
 " TODO: GUI
 " lCursor CursorIM Menu ToolbarLine ToolbarButton Scrollbar Tooltip &statusline:User1-9
 hi Boolean guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
@@ -25,7 +25,8 @@ hi Comment guifg=#4e4e4e guibg=NONE guisp=NONE gui=NONE ctermfg=239 ctermbg=NONE
 hi Conceal guifg=#d78700 guibg=NONE guisp=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
 hi Conditional guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi Constant guifg=#afaf87 guibg=NONE guisp=NONE gui=NONE ctermfg=144 ctermbg=NONE cterm=NONE
-hi Cursor guifg=#080808 guibg=#afd75f guisp=#afd75f gui=NONE ctermfg=232 ctermbg=149 cterm=NONE
+hi CurSearch guifg=#1c1c1c guibg=#ffffaf guisp=#1c1c1c gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
+hi Cursor guifg=#080808 guibg=#afd75f guisp=#080808 gui=NONE ctermfg=232 ctermbg=149 cterm=NONE
 hi CursorColumn guifg=#d7d7af guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
 hi CursorLine guifg=#d7d7af guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=187 ctermbg=234 cterm=NONE
 hi CursorLineNr guifg=#bcbcbc guibg=#121212 guisp=NONE gui=NONE ctermfg=250 ctermbg=233 cterm=NONE
@@ -47,7 +48,7 @@ hi Folded guifg=#87afaf guibg=#080808 guisp=#080808 gui=NONE ctermfg=109 ctermbg
 hi Function guifg=#5faf87 guibg=NONE guisp=NONE gui=NONE ctermfg=72 ctermbg=NONE cterm=NONE
 hi Identifier guifg=#afd7af guibg=NONE guisp=NONE gui=NONE ctermfg=151 ctermbg=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi IncSearch guifg=#1c1c1c guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
+hi IncSearch guifg=#1c1c1c guibg=#ffffaf guisp=#1c1c1c gui=NONE ctermfg=234 ctermbg=229 cterm=NONE
 hi Include guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
 hi Keyword guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
 hi Label guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
@@ -68,7 +69,7 @@ hi PreCondit guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NO
 hi PreProc guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE
 hi Question guifg=#e4e4e4 guibg=NONE guisp=NONE gui=bold ctermfg=254 ctermbg=NONE cterm=bold
 hi Repeat guifg=#87afd7 guibg=NONE guisp=NONE gui=NONE ctermfg=110 ctermbg=NONE cterm=NONE
-hi Search guifg=#444444 guibg=#ffffd7 guisp=#ffffd7 gui=NONE ctermfg=238 ctermbg=230 cterm=NONE
+hi Search guifg=#444444 guibg=#ffffd7 guisp=#444444 gui=NONE ctermfg=238 ctermbg=230 cterm=NONE
 hi SignColumn guifg=#87afaf guibg=#080808 guisp=NONE gui=NONE ctermfg=109 ctermbg=232 cterm=NONE
 hi Special guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
 hi SpecialChar guifg=#878787 guibg=NONE guisp=NONE gui=NONE ctermfg=102 ctermbg=NONE cterm=NONE
@@ -96,7 +97,11 @@ hi Type guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE ct
 hi Typedef guifg=#87d7d7 guibg=NONE guisp=NONE gui=NONE ctermfg=116 ctermbg=NONE cterm=NONE
 hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline
 hi VertSplit guifg=#262626 guibg=#262626 guisp=NONE gui=NONE ctermfg=235 ctermbg=235 cterm=NONE
-hi Visual guifg=#080808 guibg=#ffffaf guisp=#ffffaf gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
-hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#d7d7af gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
+hi Visual guifg=#080808 guibg=#ffffaf guisp=#080808 gui=NONE ctermfg=232 ctermbg=229 cterm=NONE
+hi VisualNOS guifg=#080808 guibg=#d7d7af guisp=#080808 gui=NONE ctermfg=232 ctermbg=187 cterm=NONE
 hi WarningMsg guifg=#ff8787 guibg=NONE guisp=NONE gui=NONE ctermfg=210 ctermbg=NONE cterm=NONE
 hi WildMenu guifg=#d7d75f guibg=#262626 guisp=NONE gui=NONE ctermfg=185 ctermbg=235 cterm=NONE
+
+if version >= 900 && exists('&t_AU')
+    hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline ctermul=NONE
+endif

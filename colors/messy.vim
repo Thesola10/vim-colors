@@ -1,7 +1,7 @@
 " Vim color file
 " Name:     Messy
-" Date:     Wednesday, December 8, 2021
-" Author:   Jak.W <jakwings@gmail.com>
+" Date:     Wednesday, August 17, 2022
+" Author:   J.W https://jakwings.github.io/AMA/
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=light
@@ -38,7 +38,11 @@ if exists('g:colorscheme_messy_inverse') && g:colorscheme_messy_inverse
 endif
 
 function! s:hi(name, guifg, guibg, guisp, gui, ctermfg, ctermbg, cterm)
-    exec 'hi ' . a:name . ' guifg=' . a:guifg . ' guibg=' . a:guibg . ' guisp=' . a:guisp . ' gui=' . a:gui . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg . ' cterm=' . a:cterm
+    if version >= 900 && exists('&t_AU')
+        exec 'hi ' . a:name . ' guifg=' . a:guifg . ' guibg=' . a:guibg . ' guisp=' . a:guisp . ' gui=' . a:gui . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg . ' cterm=' . a:cterm . ' ctermul=NONE'
+    else
+        exec 'hi ' . a:name . ' guifg=' . a:guifg . ' guibg=' . a:guibg . ' guisp=' . a:guisp . ' gui=' . a:gui . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg . ' cterm=' . a:cterm
+    endif
 endfunction
 
 call s:hi('Boolean', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
@@ -48,7 +52,8 @@ call s:hi('Comment', s:g8, 'NONE', 'NONE', 'NONE', s:t8, 'NONE', 'NONE')
 call s:hi('Conceal', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
 call s:hi('Conditional', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
 call s:hi('Constant', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('Cursor', s:g15, s:g12, s:g12, 'NONE', s:t15, s:t12, 'NONE')
+call s:hi('CurSearch', s:g0, s:g10, s:g0, 'NONE', s:t0, s:t10, 'NONE')
+call s:hi('Cursor', s:g15, s:g12, s:g15, 'NONE', s:t15, s:t12, 'NONE')
 call s:hi('CursorColumn', s:g15, s:g6, s:g15, 'NONE', s:t15, s:t6, 'NONE')
 call s:hi('CursorLine', s:g15, s:g6, s:g15, 'NONE', s:t15, s:t6, 'NONE')
 call s:hi('CursorLineNr', s:g15, s:g6, 'NONE', 'NONE', s:t15, s:t6, 'NONE')
@@ -70,7 +75,7 @@ call s:hi('Folded', s:g6, 'NONE', 'NONE', 'NONE', s:t6, 'NONE', 'NONE')
 call s:hi('Function', s:g1, 'NONE', 'NONE', 'NONE', s:t1, 'NONE', 'NONE')
 call s:hi('Identifier', s:g1, 'NONE', 'NONE', 'NONE', s:t1, 'NONE', 'NONE')
 call s:hi('Ignore', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
-call s:hi('IncSearch', s:g0, s:g10, s:g10, 'NONE', s:t0, s:t10, 'NONE')
+call s:hi('IncSearch', s:g0, s:g10, s:g0, 'NONE', s:t0, s:t10, 'NONE')
 call s:hi('Include', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
 call s:hi('Keyword', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
 call s:hi('Label', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
@@ -91,7 +96,7 @@ call s:hi('PreCondit', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
 call s:hi('PreProc', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
 call s:hi('Question', s:g0, 'NONE', 'NONE', 'bold', s:t0, 'NONE', 'bold')
 call s:hi('Repeat', s:g12, 'NONE', 'NONE', 'NONE', s:t12, 'NONE', 'NONE')
-call s:hi('Search', s:g15, s:g2, s:g2, 'NONE', s:t15, s:t2, 'NONE')
+call s:hi('Search', s:g15, s:g2, s:g15, 'NONE', s:t15, s:t2, 'NONE')
 call s:hi('SignColumn', s:g14, s:g8, 'NONE', 'NONE', s:t14, s:t8, 'NONE')
 call s:hi('Special', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('SpecialChar', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
@@ -119,8 +124,8 @@ call s:hi('Type', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('Typedef', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
 call s:hi('Underlined', 'NONE', 'NONE', 'NONE', 'underline', 'NONE', 'NONE', 'underline')
 call s:hi('VertSplit', s:g8, s:g8, 'NONE', 'NONE', s:t8, s:t8, 'NONE')
-call s:hi('Visual', s:g15, s:g12, s:g12, 'NONE', s:t15, s:t12, 'NONE')
-call s:hi('VisualNOS', s:g7, s:g4, s:g4, 'NONE', s:t7, s:t4, 'NONE')
+call s:hi('Visual', s:g15, s:g12, s:g15, 'NONE', s:t15, s:t12, 'NONE')
+call s:hi('VisualNOS', s:g7, s:g4, s:g7, 'NONE', s:t7, s:t4, 'NONE')
 call s:hi('WarningMsg', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
 call s:hi('WildMenu', s:g11, s:g8, 'NONE', 'NONE', s:t11, s:t8, 'NONE')
 

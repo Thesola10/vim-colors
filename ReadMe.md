@@ -55,8 +55,7 @@ How to use them:
         <img width="768" alt="Palette" src="https://user-images.githubusercontent.com/23622455/31981859-3fb365cc-b988-11e7-9a70-32c29d12640b.png">
 
         Black and White are swapped. Black↔BrightWhite, BrightBlack↔White.
-        Same applied to normal background and foreground colors.  See:
-        https://github.com/jakwings/vim-colors/wiki/%5BLight%5D-iTerm2-Theme
+        Same applied to normal background and foreground colors.
 
         **Palette Update**:
 
