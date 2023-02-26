@@ -17,7 +17,7 @@ How to use them:
 Preview:
 
 +   <a title="Outdated." href="https://asciinema.org/a/Mmivh0hTdulsVz29jJCOIplC2"><img alt="moody.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980929-a4b85d9c-63b6-11e7-84c9-6f69ce33a0f1.png" width="590"></a>
-+   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="moody.gif" src="https://user-images.githubusercontent.com/23622455/221389610-d7984fb3-8246-4409-9ce1-45bf39f035d1.gif" width="640"></a>
++   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="moody.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-moody.gif" width="640"></a>
 
 ## Light Schemes
 
@@ -26,14 +26,14 @@ Preview:
 Preview:
 
 +   <a title="Outdated." href="https://asciinema.org/a/0XezoVW8x0ejtRF7qX9uwkDgm"><img alt="garden.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980953-df0eb324-63b6-11e7-87ab-95acd8d0191e.png" width="590"></a>
-+   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="garden.gif" src="https://user-images.githubusercontent.com/23622455/221389910-6f13315a-cbd6-41cf-891d-d93fe617de04.gif" width="640"></a>
++   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="garden.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-garden.gif" width="640"></a>
 
 ### Messy: 16 colors inherited from YOUR terminal settings
 
 Preview:
 
 +   <img title="Outdated." alt="messy.png (outdated)" src="https://user-images.githubusercontent.com/23622455/30253438-9cbcd152-96b7-11e7-9f44-f9b790351bef.png" width="652">
-+   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="messy.gif" src="https://user-images.githubusercontent.com/23622455/221389954-ef30af49-fc97-4fe5-805c-551f3e820138.gif" width="640"></a>
++   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="messy.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-messy.gif" width="640"></a>
 
 Options:
 
@@ -53,7 +53,7 @@ Options:
 
     You need to modify your terminal settings to make it look nice: swap black & white ANSI colors.
 
-    <img alt="inverse.gif" src="https://user-images.githubusercontent.com/23622455/221389982-cdbb73b4-0aec-4bc8-a091-2d63a516fff3.gif" width="640">
+    <img alt="inverse.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-inverse.gif" width="640"></a>
 
     Black and White are swapped. Black↔BrightWhite, BrightBlack↔White.
     Same applied to normal background and foreground colors.
