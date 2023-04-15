@@ -17,6 +17,9 @@ How to use them:
 Preview:
 
 +   <a title="Outdated." href="https://asciinema.org/a/Mmivh0hTdulsVz29jJCOIplC2"><img alt="moody.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980929-a4b85d9c-63b6-11e7-84c9-6f69ce33a0f1.png" width="590"></a>
+
+    The outdated ascii video above used this [theme file](https://github.com/jakwings/vim-colors/blob/48ff405890c180aa58e97fec2925e1ea4b8b8f53/colors/moody.vim?raw=true).
+
 +   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="moody.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-moody.gif" width="640"></a>
 
 ## Light Schemes
@@ -26,6 +29,9 @@ Preview:
 Preview:
 
 +   <a title="Outdated." href="https://asciinema.org/a/0XezoVW8x0ejtRF7qX9uwkDgm"><img alt="garden.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980953-df0eb324-63b6-11e7-87ab-95acd8d0191e.png" width="590"></a>
+
+    The outdated ascii video above used this [theme file](https://github.com/jakwings/vim-colors/blob/48ff405890c180aa58e97fec2925e1ea4b8b8f53/colors/garden.vim?raw=true).
+
 +   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="garden.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-garden.gif" width="640"></a>
 
 ### Messy: 16 colors inherited from YOUR terminal settings
@@ -33,13 +39,18 @@ Preview:
 Preview:
 
 +   <img title="Outdated." alt="messy.png (outdated)" src="https://user-images.githubusercontent.com/23622455/30253438-9cbcd152-96b7-11e7-9f44-f9b790351bef.png" width="652">
+
+    The outdated screenshot above used this [theme file](https://github.com/jakwings/vim-colors/blob/abe8d8db21ce880779f548aeac7dd0d4452aa331/colors/messy.vim?raw=true).
+
 +   <a href="https://vimcolorschemes.com/jakwings/vim-colors"><img alt="messy.gif" src="https://github.com/jakwings/demo/raw/master/data/images/vim/colorscheme-messy.gif" width="640"></a>
 
 Options:
 
 +   Transparent background: `let g:colorscheme_messy_transparent = 1`
 
-    <details title="Outdated."><summary>More screenshots with different background images.</summary><img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30253436-9cbad1ae-96b7-11e7-8da3-daf290293bdd.png"><br><img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30253437-9cbc6eba-96b7-11e7-958c-11638362ae2d.png"></details>
+    <details><summary>More screenshots with different background images. (outdated)</summary>
+    <img width="652" alt="typography" src="https://user-images.githubusercontent.com/23622455/30253436-9cbad1ae-96b7-11e7-8da3-daf290293bdd.png"><br>
+    <img width="652" alt="lined paper" src="https://user-images.githubusercontent.com/23622455/30253437-9cbc6eba-96b7-11e7-958c-11638362ae2d.png">
 
     The background images used in the screenshots:
 
@@ -48,6 +59,8 @@ Options:
 
     [Lined Paper]: https://www.toptal.com/designers/subtlepatterns/lined-paper-2/
     [Topography]: https://www.toptal.com/designers/subtlepatterns/topography/
+
+    </details>
 
 +   Inverse BG&FG colors: `let g:colorscheme_messy_inverse = 1`
 
