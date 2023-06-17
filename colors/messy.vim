@@ -1,16 +1,17 @@
 " Vim color file
 " Name:     Messy
-" Date:     Wednesday, August 17, 2022
+" Date:     Saturday, June 17, 2023
 " Author:   J.W https://jakwings.github.io/AMA/
 " Credits:  Thanks to http://bytefluent.com/vivify/
 
 set background=light
 
-if version > 580
-    if exists('syntax_on')
-        syntax reset
-    endif
+if version > 580 && exists('syntax_on')
+    syntax reset
 endif
+
+let s:cpo_save = &cpo
+set cpo&vim
 
 let g:colors_name = 'messy'
 
@@ -37,100 +38,109 @@ if exists('g:colorscheme_messy_inverse') && g:colorscheme_messy_inverse
     let [s:g7, s:t7, s:g8, s:t8] = [s:g8, s:t8, s:g7, s:t7]
 endif
 
-function! s:hi(name, guifg, guibg, guisp, gui, ctermfg, ctermbg, cterm)
+function! s:translate(cmd)
+    let l:pat = '\C\<s:[gt]\d\+\>'
+    let l:sub = '\=eval(submatch(0))'
+    let l:cmd = substitute(a:cmd, l:pat, l:sub, 'g')
     if version >= 900 && exists('&t_AU')
-        exec 'hi ' . a:name . ' guifg=' . a:guifg . ' guibg=' . a:guibg . ' guisp=' . a:guisp . ' gui=' . a:gui . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg . ' cterm=' . a:cterm . ' ctermul=NONE'
-    else
-        exec 'hi ' . a:name . ' guifg=' . a:guifg . ' guibg=' . a:guibg . ' guisp=' . a:guisp . ' gui=' . a:gui . ' ctermfg=' . a:ctermfg . ' ctermbg=' . a:ctermbg . ' cterm=' . a:cterm
+        let l:cmd = substitute(l:cmd, '\n\|$', " ctermul=NONE\n", 'g')
     endif
+    execute l:cmd
 endfunction
 
-call s:hi('Boolean', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('Character', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('ColorColumn', s:g0, s:g7, s:g0, 'NONE', s:t0, s:t7, 'NONE')
-call s:hi('Comment', s:g8, 'NONE', 'NONE', 'NONE', s:t8, 'NONE', 'NONE')
-call s:hi('Conceal', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
-call s:hi('Conditional', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('Constant', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('CurSearch', s:g0, s:g10, s:g0, 'NONE', s:t0, s:t10, 'NONE')
-call s:hi('Cursor', s:g15, s:g12, s:g15, 'NONE', s:t15, s:t12, 'NONE')
-call s:hi('CursorColumn', s:g15, s:g6, s:g15, 'NONE', s:t15, s:t6, 'NONE')
-call s:hi('CursorLine', s:g15, s:g6, s:g15, 'NONE', s:t15, s:t6, 'NONE')
-call s:hi('CursorLineNr', s:g15, s:g6, 'NONE', 'NONE', s:t15, s:t6, 'NONE')
-call s:hi('Debug', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('Define', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('Delimiter', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('DiffAdd', s:g15, s:g2, s:g2, 'bold', s:t15, s:t2, 'NONE')
-call s:hi('DiffChange', s:g0, s:g11, s:g11, 'NONE', s:t0, s:t11, 'NONE')
-call s:hi('DiffDelete', s:g15, s:g9, s:g9, 'bold', s:t15, s:t9, 'NONE')
-call s:hi('DiffText', s:g0, s:g11, s:g11, 'bold', s:t0, s:t11, 'underline')
-call s:hi('Directory', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('EndOfBuffer', s:g7, s:g15, 'NONE', 'NONE', s:t7, s:t15, 'NONE')
-call s:hi('Error', s:g0, s:g9, 'NONE', 'bold', s:t0, s:t9, 'underline')
-call s:hi('ErrorMsg', s:g9, 'NONE', 'NONE', 'NONE', s:t9, 'NONE', 'NONE')
-call s:hi('Exception', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('Float', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('FoldColumn', s:g14, s:g8, 'NONE', 'NONE', s:t14, s:t8, 'NONE')
-call s:hi('Folded', s:g6, 'NONE', 'NONE', 'NONE', s:t6, 'NONE', 'NONE')
-call s:hi('Function', s:g1, 'NONE', 'NONE', 'NONE', s:t1, 'NONE', 'NONE')
-call s:hi('Identifier', s:g1, 'NONE', 'NONE', 'NONE', s:t1, 'NONE', 'NONE')
-call s:hi('Ignore', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
-call s:hi('IncSearch', s:g0, s:g10, s:g0, 'NONE', s:t0, s:t10, 'NONE')
-call s:hi('Include', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
-call s:hi('Keyword', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('Label', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('LineNr', s:g8, 'NONE', 'NONE', 'NONE', s:t8, 'NONE', 'NONE')
-call s:hi('Macro', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
-call s:hi('MatchParen', s:g15, s:g13, s:g13, 'bold', s:t15, s:t13, 'bold')
-call s:hi('ModeMsg', s:g12, 'NONE', 'NONE', 'NONE', s:t12, 'NONE', 'NONE')
-call s:hi('MoreMsg', s:g6, 'NONE', 'NONE', 'NONE', s:t6, 'NONE', 'NONE')
-call s:hi('NonText', s:g7, 'NONE', 'NONE', 'NONE', s:t7, 'NONE', 'NONE')
-call s:hi('Normal', s:g0, s:g15, 'NONE', 'NONE', s:t0, s:t15, 'NONE')
-call s:hi('Number', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('Operator', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('Pmenu', s:g15, s:g5, 'NONE', 'NONE', s:t15, s:t5, 'NONE')
-call s:hi('PmenuSbar', 'NONE', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE')
-call s:hi('PmenuSel', s:g15, s:g13, 'NONE', 'NONE', s:t15, s:t13, 'NONE')
-call s:hi('PmenuThumb', 'NONE', s:g6, 'NONE', 'NONE', s:t0, s:t6, 'NONE')
-call s:hi('PreCondit', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
-call s:hi('PreProc', s:g2, 'NONE', 'NONE', 'NONE', s:t2, 'NONE', 'NONE')
-call s:hi('Question', s:g0, 'NONE', 'NONE', 'bold', s:t0, 'NONE', 'bold')
-call s:hi('Repeat', s:g12, 'NONE', 'NONE', 'NONE', s:t12, 'NONE', 'NONE')
-call s:hi('Search', s:g15, s:g2, s:g15, 'NONE', s:t15, s:t2, 'NONE')
-call s:hi('SignColumn', s:g14, s:g8, 'NONE', 'NONE', s:t14, s:t8, 'NONE')
-call s:hi('Special', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('SpecialChar', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('SpecialComment', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('SpecialKey', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
-call s:hi('SpellBad', 'NONE', 'NONE', s:g9, 'undercurl', s:t1, s:t7, 'underline')
-call s:hi('SpellCap', 'NONE', 'NONE', s:g12, 'undercurl', s:t4, s:t7, 'underline')
-call s:hi('SpellLocal', 'NONE', 'NONE', s:g2, 'undercurl', s:t0, s:t7, 'underline')
-call s:hi('SpellRare', 'NONE', 'NONE', s:g8, 'undercurl', s:t8, s:t7, 'underline')
-call s:hi('Statement', s:g4, 'NONE', 'NONE', 'NONE', s:t4, 'NONE', 'NONE')
-call s:hi('StatusLine', s:g15, s:g8, 'NONE', 'NONE', s:t15, s:t8, 'NONE')
-call s:hi('StatusLineNC', s:g7, s:g8, 'NONE', 'NONE', s:t7, s:t8, 'NONE')
-call s:hi('StatusLineTerm', s:g10, s:g0, 'NONE', 'NONE', s:t10, s:t0, 'NONE')
-call s:hi('StatusLineTermNC', s:g2, s:g0, 'NONE', 'NONE', s:t2, s:t0, 'NONE')
-call s:hi('StorageClass', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('String', s:g3, 'NONE', 'NONE', 'NONE', s:t3, 'NONE', 'NONE')
-call s:hi('Structure', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('TabLine', s:g7, s:g0, 'NONE', 'NONE', s:t7, s:t0, 'NONE')
-call s:hi('TabLineFill', 'NONE', s:g0, 'NONE', 'NONE', 'NONE', s:t0, 'NONE')
-call s:hi('TabLineSel', s:g15, s:g0, 'NONE', 'NONE', s:t15, s:t0, 'NONE')
-call s:hi('Tag', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('Title', 'NONE', 'NONE', 'NONE', 'bold', 'NONE', 'NONE', 'bold')
-call s:hi('Todo', s:g0, s:g11, 'NONE', 'bold', s:t0, s:t11, 'underline')
-call s:hi('Type', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('Typedef', s:g5, 'NONE', 'NONE', 'NONE', s:t5, 'NONE', 'NONE')
-call s:hi('Underlined', 'NONE', 'NONE', 'NONE', 'underline', 'NONE', 'NONE', 'underline')
-call s:hi('VertSplit', s:g8, s:g8, 'NONE', 'NONE', s:t8, s:t8, 'NONE')
-call s:hi('Visual', s:g15, s:g12, s:g15, 'NONE', s:t15, s:t12, 'NONE')
-call s:hi('VisualNOS', s:g7, s:g4, s:g7, 'NONE', s:t7, s:t4, 'NONE')
-call s:hi('WarningMsg', s:g13, 'NONE', 'NONE', 'NONE', s:t13, 'NONE', 'NONE')
-call s:hi('WildMenu', s:g11, s:g8, 'NONE', 'NONE', s:t11, s:t8, 'NONE')
+call s:translate("
+\hi Boolean guifg=s:g3 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t3 ctermbg=NONE cterm=NONE\n
+\hi Character guifg=s:g3 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t3 ctermbg=NONE cterm=NONE\n
+\hi ColorColumn guifg=s:g0 guibg=s:g7 guisp=s:g0 gui=NONE ctermfg=s:t0 ctermbg=s:t7 cterm=NONE\n
+\hi Comment guifg=s:g8 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t8 ctermbg=NONE cterm=NONE\n
+\hi Conceal guifg=s:g13 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t13 ctermbg=NONE cterm=NONE\n
+\hi Conditional guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi Constant guifg=s:g3 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t3 ctermbg=NONE cterm=NONE\n
+\hi CurSearch guifg=s:g0 guibg=s:g10 guisp=s:g0 gui=NONE ctermfg=s:t0 ctermbg=s:t10 cterm=NONE\n
+\hi Cursor guifg=s:g15 guibg=s:g12 guisp=s:g15 gui=NONE ctermfg=s:t15 ctermbg=s:t12 cterm=NONE\n
+\hi CursorColumn guifg=s:g15 guibg=s:g6 guisp=s:g15 gui=NONE ctermfg=s:t15 ctermbg=s:t6 cterm=NONE\n
+\hi CursorLine guifg=s:g15 guibg=s:g6 guisp=s:g15 gui=NONE ctermfg=s:t15 ctermbg=s:t6 cterm=NONE\n
+\hi CursorLineNr guifg=s:g15 guibg=s:g6 guisp=NONE gui=NONE ctermfg=s:t15 ctermbg=s:t6 cterm=NONE\n
+\hi Debug guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi Define guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi Delimiter guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi DiffAdd guifg=s:g15 guibg=s:g2 guisp=s:g2 gui=bold ctermfg=s:t15 ctermbg=s:t2 cterm=NONE\n
+\hi DiffChange guifg=s:g0 guibg=s:g11 guisp=s:g11 gui=NONE ctermfg=s:t0 ctermbg=s:t11 cterm=NONE\n
+\hi DiffDelete guifg=s:g15 guibg=s:g9 guisp=s:g9 gui=bold ctermfg=s:t15 ctermbg=s:t9 cterm=NONE\n
+\hi DiffText guifg=s:g0 guibg=s:g11 guisp=s:g11 gui=bold ctermfg=s:t0 ctermbg=s:t11 cterm=underline\n
+\hi Directory guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi EndOfBuffer guifg=s:g7 guibg=s:g15 guisp=NONE gui=NONE ctermfg=s:t7 ctermbg=s:t15 cterm=NONE\n
+\hi Error guifg=s:g0 guibg=s:g9 guisp=NONE gui=bold ctermfg=s:t0 ctermbg=s:t9 cterm=underline\n
+\hi ErrorMsg guifg=s:g9 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t9 ctermbg=NONE cterm=NONE\n
+\hi Exception guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi Float guifg=s:g3 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t3 ctermbg=NONE cterm=NONE\n
+\hi FoldColumn guifg=s:g14 guibg=s:g8 guisp=NONE gui=NONE ctermfg=s:t14 ctermbg=s:t8 cterm=NONE\n
+\hi Folded guifg=s:g6 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t6 ctermbg=NONE cterm=NONE\n
+\hi Function guifg=s:g1 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t1 ctermbg=NONE cterm=NONE\n
+\hi Identifier guifg=s:g1 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t1 ctermbg=NONE cterm=NONE\n
+\hi Ignore guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE\n
+\hi IncSearch guifg=s:g0 guibg=s:g10 guisp=s:g0 gui=NONE ctermfg=s:t0 ctermbg=s:t10 cterm=NONE\n
+\hi Include guifg=s:g2 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t2 ctermbg=NONE cterm=NONE\n
+\hi Keyword guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi Label guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi LineNr guifg=s:g8 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t8 ctermbg=NONE cterm=NONE\n
+\hi Macro guifg=s:g2 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t2 ctermbg=NONE cterm=NONE\n
+\hi MatchParen guifg=s:g15 guibg=s:g13 guisp=s:g13 gui=bold ctermfg=s:t15 ctermbg=s:t13 cterm=bold\n
+\hi ModeMsg guifg=s:g12 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t12 ctermbg=NONE cterm=NONE\n
+\hi MoreMsg guifg=s:g6 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t6 ctermbg=NONE cterm=NONE\n
+\hi NonText guifg=s:g7 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t7 ctermbg=NONE cterm=NONE\n
+\hi Normal guifg=s:g0 guibg=s:g15 guisp=NONE gui=NONE ctermfg=s:t0 ctermbg=s:t15 cterm=NONE\n
+\hi Number guifg=s:g3 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t3 ctermbg=NONE cterm=NONE\n
+\hi Operator guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi Pmenu guifg=s:g15 guibg=s:g5 guisp=NONE gui=NONE ctermfg=s:t15 ctermbg=s:t5 cterm=NONE\n
+\hi PmenuSbar guifg=NONE guibg=s:g5 guisp=NONE gui=NONE ctermfg=NONE ctermbg=s:t5 cterm=NONE\n
+\hi PmenuSel guifg=s:g15 guibg=s:g13 guisp=NONE gui=NONE ctermfg=s:t15 ctermbg=s:t13 cterm=NONE\n
+\hi PmenuThumb guifg=NONE guibg=s:g6 guisp=NONE gui=NONE ctermfg=s:t0 ctermbg=s:t6 cterm=NONE\n
+\hi PreCondit guifg=s:g2 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t2 ctermbg=NONE cterm=NONE\n
+\hi PreProc guifg=s:g2 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t2 ctermbg=NONE cterm=NONE\n
+\hi Question guifg=s:g0 guibg=NONE guisp=NONE gui=bold ctermfg=s:t0 ctermbg=NONE cterm=bold\n
+\hi Repeat guifg=s:g12 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t12 ctermbg=NONE cterm=NONE\n
+\hi Search guifg=s:g15 guibg=s:g2 guisp=s:g15 gui=NONE ctermfg=s:t15 ctermbg=s:t2 cterm=NONE\n
+\hi SignColumn guifg=s:g14 guibg=s:g8 guisp=NONE gui=NONE ctermfg=s:t14 ctermbg=s:t8 cterm=NONE\n
+\hi Special guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi SpecialChar guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi SpecialComment guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi SpecialKey guifg=s:g13 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t13 ctermbg=NONE cterm=NONE\n
+\hi SpellBad guifg=NONE guibg=NONE guisp=s:g9 gui=undercurl ctermfg=s:t1 ctermbg=s:t7 cterm=underline\n
+\hi SpellCap guifg=NONE guibg=NONE guisp=s:g12 gui=undercurl ctermfg=s:t4 ctermbg=s:t7 cterm=underline\n
+\hi SpellLocal guifg=NONE guibg=NONE guisp=s:g2 gui=undercurl ctermfg=s:t0 ctermbg=s:t7 cterm=underline\n
+\hi SpellRare guifg=NONE guibg=NONE guisp=s:g8 gui=undercurl ctermfg=s:t8 ctermbg=s:t7 cterm=underline\n
+\hi Statement guifg=s:g4 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t4 ctermbg=NONE cterm=NONE\n
+\hi StatusLine guifg=s:g15 guibg=s:g8 guisp=NONE gui=NONE ctermfg=s:t15 ctermbg=s:t8 cterm=NONE\n
+\hi StatusLineNC guifg=s:g7 guibg=s:g8 guisp=NONE gui=NONE ctermfg=s:t7 ctermbg=s:t8 cterm=NONE\n
+\hi StatusLineTerm guifg=s:g10 guibg=s:g0 guisp=NONE gui=NONE ctermfg=s:t10 ctermbg=s:t0 cterm=NONE\n
+\hi StatusLineTermNC guifg=s:g2 guibg=s:g0 guisp=NONE gui=NONE ctermfg=s:t2 ctermbg=s:t0 cterm=NONE\n
+\hi StorageClass guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi String guifg=s:g3 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t3 ctermbg=NONE cterm=NONE\n
+\hi Structure guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi TabLine guifg=s:g7 guibg=s:g0 guisp=NONE gui=NONE ctermfg=s:t7 ctermbg=s:t0 cterm=NONE\n
+\hi TabLineFill guifg=NONE guibg=s:g0 guisp=NONE gui=NONE ctermfg=NONE ctermbg=s:t0 cterm=NONE\n
+\hi TabLineSel guifg=s:g15 guibg=s:g0 guisp=NONE gui=NONE ctermfg=s:t15 ctermbg=s:t0 cterm=NONE\n
+\hi Tag guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi Title guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold\n
+\hi Todo guifg=s:g0 guibg=s:g11 guisp=NONE gui=bold ctermfg=s:t0 ctermbg=s:t11 cterm=underline\n
+\hi Type guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi Typedef guifg=s:g5 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t5 ctermbg=NONE cterm=NONE\n
+\hi Underlined guifg=NONE guibg=NONE guisp=NONE gui=underline ctermfg=NONE ctermbg=NONE cterm=underline\n
+\hi VertSplit guifg=s:g8 guibg=s:g8 guisp=NONE gui=NONE ctermfg=s:t8 ctermbg=s:t8 cterm=NONE\n
+\hi Visual guifg=s:g15 guibg=s:g12 guisp=s:g15 gui=NONE ctermfg=s:t15 ctermbg=s:t12 cterm=NONE\n
+\hi VisualNOS guifg=s:g7 guibg=s:g4 guisp=s:g7 gui=NONE ctermfg=s:t7 ctermbg=s:t4 cterm=NONE\n
+\hi WarningMsg guifg=s:g13 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t13 ctermbg=NONE cterm=NONE\n
+\hi WildMenu guifg=s:g11 guibg=s:g8 guisp=NONE gui=NONE ctermfg=s:t11 ctermbg=s:t8 cterm=NONE\n
+\")
 
 if exists('g:colorscheme_messy_transparent') && g:colorscheme_messy_transparent
-    call s:hi('EndOfBuffer', s:g8, 'NONE', 'NONE', 'NONE', s:t8, 'NONE', 'NONE')
-    call s:hi('Normal', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE', 'NONE')
-    call s:hi('Question', 'NONE', 'NONE', 'NONE', 'bold', 'NONE', 'NONE', 'bold')
+    call s:translate("
+    \hi EndOfBuffer guifg=s:g8 guibg=NONE guisp=NONE gui=NONE ctermfg=s:t8 ctermbg=NONE cterm=NONE\n
+    \hi Normal guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE\n
+    \hi Question guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold\n
+    \")
 endif
+
+let &cpo = s:cpo_save
+unlet s:cpo_save
