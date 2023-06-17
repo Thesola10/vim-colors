@@ -16,7 +16,7 @@ How to use them:
 
 Preview:
 
-+   <a title="Outdated." href="https://asciinema.org/a/Mmivh0hTdulsVz29jJCOIplC2"><img alt="moody.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980929-a4b85d9c-63b6-11e7-84c9-6f69ce33a0f1.png" width="590"></a>
++   <a title="Outdated.  Please disable DarkReader for this demo." href="https://asciinema.org/a/Mmivh0hTdulsVz29jJCOIplC2"><img alt="moody.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980929-a4b85d9c-63b6-11e7-84c9-6f69ce33a0f1.png" width="590"></a>
 
     The outdated ascii video above used this [theme file](https://github.com/jakwings/vim-colors/blob/48ff405890c180aa58e97fec2925e1ea4b8b8f53/colors/moody.vim?raw=true).
 
@@ -28,7 +28,7 @@ Preview:
 
 Preview:
 
-+   <a title="Outdated." href="https://asciinema.org/a/0XezoVW8x0ejtRF7qX9uwkDgm"><img alt="garden.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980953-df0eb324-63b6-11e7-87ab-95acd8d0191e.png" width="590"></a>
++   <a title="Outdated.  Please disable DarkReader for this demo." href="https://asciinema.org/a/0XezoVW8x0ejtRF7qX9uwkDgm"><img alt="garden.demo (outdated)" src="https://user-images.githubusercontent.com/23622455/27980953-df0eb324-63b6-11e7-87ab-95acd8d0191e.png" width="590"></a>
 
     The outdated ascii video above used this [theme file](https://github.com/jakwings/vim-colors/blob/48ff405890c180aa58e97fec2925e1ea4b8b8f53/colors/garden.vim?raw=true).
 
